@@ -2,7 +2,7 @@
 body {
   color: #444;
   font-size: 16px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Gentium Book Basic', sans-serif;
 }
 p {
   margin-bottom: .67em;
@@ -19,6 +19,8 @@ footer {
 nav ul {
   list-style: none;
   padding: 1em;
+  display: flex;
+  justify-content: space-evenly;
 }
 nav a:link, nav a:visited {
   color: #D0D0D0;
@@ -36,6 +38,8 @@ header {
   width: 510px;
   margin-top: 2em;
   margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
 }
 header img {
   width: 100%;
@@ -43,27 +47,42 @@ header img {
 }
 header h1 {
   margin: 0 auto;
+  text-align: center;
   padding: 0 auto;
 }
+
 .small {
   margin-top: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  color: #7e7e7e;
+  text-transform: uppercase;
 }
 /*-- Article Styles--*/
 article {
   width: 768px;
   font-size: 18px;
   line-height: 1.3;
+  margin:auto;
 }
 article figure {
   width: 39%;
   margin: 0 0 1.25em 1.25em;
+  float: right;
 }
 article figcaption {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color: #404040;
 }
+
 .pagination {
   margin-top: 2em;
   margin-bottom: 2em;
   width: 96%;
+  display: flex;
+  justify-content: space-evenly;
 }
 a.button {
   border: 1px solid #888;
@@ -80,8 +99,14 @@ a.button:hover, a.button:active {
   text-decoration: none;
   color: #222;
 }
+
+.article-img{
+  height: 90%;
+  width: 90%;
+}
 /*-- changes header and article width on small screens --*/
 @media screen and (max-width: 768px) {
   header {width: 96%;}
   article {width: 96%;}
 }
+
