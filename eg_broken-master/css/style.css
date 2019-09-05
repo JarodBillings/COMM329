@@ -1,3 +1,4 @@
+
 /*--Remember the cascade: Later styles override earlier ones and more specific styles override more general ones.--*/
 body {
   color: #444;
@@ -7,8 +8,12 @@ body {
 p {
   margin-bottom: .67em;
 }
+nav {
+  background-color: #084C61;
+}
 nav, footer {
-  background-color: #444;
+  background-color: #084C61;
+
 }
 footer {
   text-align: center;
@@ -16,19 +21,33 @@ footer {
   color: #D0D0D0;
 }
 /*-- Main Menu Styles--*/
+.li-arrow-back, .li-arrow-fwd{
+  font-size: 25px;
+}
+
+.li-arrow-back a:hover, .li-arrow-back a:hover{
+  color: #DB3A34;
+}
+
+.li-arrow-fwd a:hover, .li-arrow-fwd a:active{
+  color: #679436;
+}
 nav ul {
   list-style: none;
   padding: 1em;
   display: flex;
+  flex-direction: row;
+  text-align: center; 
   justify-content: space-evenly;
+  font-weight: bold;
+  align-items: center;
 }
 nav a:link, nav a:visited {
-  color: #D0D0D0;
+  color: #FEFEFE;
   text-decoration: none;
 }
 nav a:hover, nav a:active  {
-  color: #F0F0F0;
-  text-decoration: underline;
+  text-decoration: none;
 }
 nav a.active {
   color: #F0F0F0;
@@ -88,7 +107,7 @@ a.button {
   border: 1px solid #888;
   padding: .4em 1em .4em 1em;
   text-decoration: none;
-  color: #888;
+  color:#1a1a1a;
   border-radius: 200px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -97,7 +116,7 @@ a.button {
 a.button:hover, a.button:active {
   border: 1px solid #444;
   text-decoration: none;
-  color: #222;
+  background-color: #006994;
 }
 
 .article-img{
