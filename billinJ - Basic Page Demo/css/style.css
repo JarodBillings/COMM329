@@ -119,6 +119,19 @@ a.button:hover, a.button:active {
   background-color: #006994;
 }
 
+.dropcap{
+   color: #e94f37;
+    float: left;
+    font-size: 100px;
+    line-height: 30px;
+    padding-right: 5px;
+    padding-left: 3px;
+    padding-bottom: 18px;
+}
+.firstP{
+  font-size: 125%;
+  font-weight: bold;
+}
 .article-img{
   height: 90%;
   width: 90%;
